@@ -33,8 +33,8 @@ pipeline {
            sshPublisherDesc(
            configName: 'apache',
                   sshCredentials: [
-                        username: 'cloud_user',
-                        encryptedPassphrase: "$USERPASS"
+                        username: 'root',
+                        encryptedPassphrase: "$SSH_PASS"
                                 ], 
                                 transfers: [
                                     sshTransfer(
