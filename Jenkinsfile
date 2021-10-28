@@ -19,6 +19,7 @@ pipeline {
                                 ], 
                                 transfers: [
                                     sshTransfer(
+                                     cleanRemote: true
                                         sourceFiles: '*/*',
                                         remoteDirectory: '/usr/share/httpd/noindex'
                                         
